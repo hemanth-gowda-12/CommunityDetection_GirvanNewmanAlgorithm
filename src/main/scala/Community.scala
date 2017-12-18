@@ -290,8 +290,8 @@ object Community
     }
 
     val finClusters=getClusters(updatingNodeVsConnectedNodelistMap)
-    new File("Clusters.txt" ).delete()
-    val printCommunity = new PrintWriter(new File("Clusters.txt" ))
+    new File("Communities.txt" ).delete()
+    val printCommunity = new PrintWriter(new File("Communities.txt" ))
 
     for (elem <- finClusters.sortWith((x,y)=>x.size<y.size))
     {
